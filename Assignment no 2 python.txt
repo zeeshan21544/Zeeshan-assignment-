@@ -1,0 +1,87 @@
+1. Write a program which takes 5 inputs from user for different subject’s
+   marks, total it and generate mark sheet using grades ?
+
+ANS:
+
+print ("*****Marks sheet*****")
+English = int(input("enter your marks of english out of 100 = "))
+urdu = int(input("enter your marks of urdu out of 100 = "))
+math = int(input("enter your marks of math out of 100 = "))
+physics = int(input("enter your marks of physics out of 100 = "))
+chemistry = int(input("enter your marks of chemistry out of 100 = "))
+total_marks=English+urdu+math+physics+chemistry
+percentage= (total_marks/500)*100
+print("your total marks are" + str(total_marks))
+print("your percentage is" + " " + str(percentage))
+
+if  percentage >=90 and percentage <= 100 :
+       print("congratulation! you have secured A")
+elif percentage <90 and percentage >=80 :
+       print("congratulation! you have secured B")
+elif percentage <80 and percentage >=70 :
+       print("congratulation! you have secured C")
+elif percentage >=60 and percentage <=60:
+       print("congratulation! you have secured D")
+else:
+      print("you are fail")
+
+
+
+
+
+2. Write a program which take input from user and identify that the given
+number is even or odd?
+
+ANS:
+
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+   print("{0} is Even".format(num))
+else:
+   print("{0} is Odd".format(num))
+
+
+
+3. Write a program which print the length of the list?
+
+
+ANS:
+list=[22,21,33,44,55]
+print(len(list))
+
+
+
+4. Write a Python program to sum all the numeric items in a list?
+
+
+ANS:
+list=[22,21,33,4,55]
+x=len(list)
+sum=0
+for i in range (x):
+    sum=sum+list[i]
+print("sum of list=",sum)
+
+
+
+5. Write a Python program to get the largest number from a numeric list.
+
+
+ANS:
+list=[22,21,33,44,55]
+print(max(list))
+
+
+
+6. Take a list, say for example this one:
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+and write a program that prints out all the elements of the list that are
+less than 5.
+
+ANS:
+
+list=[1,1,2,3,5,8,13,21,34,55,89]
+x=len(list)
+for i in range(x):
+    if list[i]<5:
+        print(list[i])
